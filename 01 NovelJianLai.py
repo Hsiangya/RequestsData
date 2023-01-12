@@ -36,8 +36,8 @@ for url in ChapterURLList[:5]:
     # print(Context)
 
     """保存到txt"""
-    if not os.path.exists("剑来"):
-        os.mkdir("剑来")
-    with open("剑来/" + ChapterTitle + ".txt", "w", encoding="utf-8") as file:
+    if not os.path.exists("01 剑来"):
+        os.mkdir("01 剑来")
+    with open("01 剑来/" + ChapterTitle + ".txt", "w", encoding="utf-8") as file:
         file.write(Context)
         print(f"保存：{ChapterTitle}成功")

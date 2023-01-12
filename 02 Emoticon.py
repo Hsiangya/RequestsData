@@ -24,9 +24,9 @@ for page in range(1, 20):
             """文件名"""
             FileName = EmotionUrl.split("/")[-1]
             """保存到文件"""
-            if not os.path.exists("img"):
-                os.mkdir("img")
-            with open("img/" + FileName, "wb") as file:
+            if not os.path.exists("02 img"):
+                os.mkdir("02 img")
+            with open("02 img/" + FileName, "wb") as file:
                 file.write(ImgBin)
                 print("已保存表情：" + FileName)
         except Exception as e:
